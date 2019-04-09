@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<html>
+<body>
+<h1>Geometry Ray Tracer</h1>
+<h2>CS488 Final Project</h2>
+<h2>By Luke Scollard</h2>
+
+<p>A ray tracer focused on rendering interesting geometry without using meshes.</p>
+
+<h2>Objectives:</h2>
+
+<h3>Extra Primitives: Cylinder and Cone</h3>
+
+<h4>Cylinder</h4>
+<img src="Assets/cylinder.png" alt="Cylinder">
+
+<h4>Cone</h4>
+<img src="Assets/cone.png" alt="Cone">
+
+<h3>Reflection</h3>
+<img src="Assets/reflection.png" alt="Reflection">
+
+<h3>Refraction</h3>
+<img src="Assets/refraction.png" alt="Refraction">
+
+<h3>Glossy Reflection</h3>
+
+<img src="Assets/glossy_reflection.png" alt="Glossy Reflection">
+
+<h4>Glossy Reflection Off</h4>
+
+<img src="Assets/glossy_reflection_off.png" alt="Glossy Reflection Off">
+
+<h3>Glossy Refraction</h3>
+
+<img src="Assets/glossy_refraction.png" alt="Glossy Refraction">
+
+<h4>Glossy Refraction Off</h4>
+
+<img src="Assets/glossy_refraction_off.png" alt="Glossy Refraction Off">
+
+<h3>Translucency</h3>
+
+<img src="Assets/translucent.png">
+
+<h4>Translucency Off</h4>
+
+<img src="Assets/translucent_off.png">
+
+<h3>Acceleration: Bounding Volume Hierarchy</h3>
+
+<h4>5 Objects</h4>
+<img src="Assets/box_5.png">
+
+<h4>10 Objects</h4>
+<img src="Assets/box_10.png">
+
+<h4>25 Objects</h4>
+<img src="Assets/box_25.png">
+
+<h4>50 Objects</h4>
+<img src="Assets/box_50.png">
+
+<h4>100 Objects</h4>
+<img src="Assets/box_100.png">
+
+<h4>Runtime Comparison (Average over 3 Runs)</h4>
+
+<table>
+	<tr>
+		<th> Number of Objects</th>
+		<th> Runtime Without Bounding Volumes (s)</th>
+		<th> Runtime With Bounding Volumes (s)</th>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>4.7</td>
+		<td>3.7</td>
+	</tr>
+	<tr>
+		<td>10</td>
+		<td>9.1</td>
+		<td>5.2</td>
+	</tr>
+	<tr>
+		<td>25</td>
+		<td>24.7</td>
+		<td>9.8</td>
+	</tr>
+	<tr>
+		<td>50</td>
+		<td>53.5</td>
+		<td>16.7</td>
+	</tr>
+	<tr>
+		<td>100</td>
+		<td>127.4</td>
+		<td>27.6</td>
+	</tr>
+</table>
+
+<img src="Assets/runtime_graph.png">
+
+<h3>Depth of Field</h3>
+
+<img src="Assets/dof_1.png">
+<img src="Assets/dof_2.png">
+
+<h4>Depth of Field Off</h4>
+
+<img src="Assets/dof.png">
+
+<h3>Soft Shadows</h3>
+
+<img src="Assets/soft_shadows.png">
+
+<h4>Soft Shadows Off</h4>
+
+<img src="Assets/soft_shadows_off.png">
+
+<h3>Texture Mapping</h3>
+
+<img src="Assets/texture.png">
+
+<br>
+
+<p>	
+	<i>Coke Can texture retrieved from:</i> 
+	<a href='https://forums.autodesk.com/t5/3ds-max-forum/soda-can-with-wet-texture/m-p/4935456#M92983'>Autodesk Forums</a>
+</p>
+<p>	
+	<i>Grass texture retrieved from:</i>
+	<a href='https://www.cgbookcase.com/textures/grass-01'>www.cgbookcase.com</a>
+</p>
+<p>
+	<i>Moon texture retrieved from:</i>
+	<a href='https://www.solarsystemscope.com/textures/download/2k_moon.jpg'>www.solarsystemscope.com</a>
+</p>
+
+<h2>Extra Objectives</h2>
+
+<h3>Torus</h3>
+
+<img src="Assets/torus.png">
+
+<h3>Constructive Solid Geometry</h3>
+
+<h4>Union</h4>
+
+<img src="Assets/csg_union.png">
+
+<img src="Assets/CSG Union/csg_union.gif">
+
+<img src="Assets/CSG Union 2/cs_union2.gif">
+
+<h4>Intersection</h4>
+
+<img src="Assets/csg_intersection.png">
+
+<img src="Assets/CSG Intersection/csg_intersection.gif">
+
+<img src="Assets/CS Intersection 2/csg_intersection2.gif">
+
+<h4>Difference</h4>
+
+<img src="Assets/csg_difference.png">
+
+<img src="Assets/CSG Difference/csg_difference.gif">
+
+<img src="Assets/CSG Difference 2/csg_difference2.gif">
+
+<h3>Bump Mapping</h3>
+
+<img src="Assets/bump_mapping_l.png">
+<br>
+<img src="Assets/bump_mapping_r.png">
+<br>
+<p>
+	<i>Normal map retrieved from:</i>
+	<a href='https://freepbr.com/materials/concrete1-pbr/'>freepbr.com</a>
+</p>
+
+<img src="Assets/Bump Mapping/bump_mapping.gif">
+
+<h2>But wait, there's more!</h2>
+
+<img src="Assets/space.png">
+
+<p>
+	<i>Earth texture retrieved from:</i>
+	<a href='https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg'>www.solarsystemscope.com</a>
+</p>
+
+<img src="Assets/space_fe.png">
+
+<p>
+	<i>Flat Earth texture courtesy of Dave Pagurek</i>
+</p>
+
+<img src="Assets/space_mt.png">
+
+<h2>Final Scene</h2>
+
+<img src="Assets/final_scene.png">
+
+<p>
+	<i>Dark wood texture retrieved from:</i>
+	<a href='https://www.cgbookcase.com/textures/wood-07'>www.cgbookcase.com</a>
+</p>
+
+<p>
+	<i>Light wood texture retrieved from:</i>
+	<a href='https://www.cgbookcase.com/textures/wood-06'>www.cgbookcase.com</a>
+</p>
